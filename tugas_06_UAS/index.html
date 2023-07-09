@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam-kun</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CDN Roboto Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+  <!-- CDN  Caveat Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- favicon -->
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/64738673" type="image/x-icon">
+
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .navbar {
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .navbar-toggler {
+      box-shadow: none !important;
+      border: #FFFFFF82 solid 0.2px;
+    }
+
+    .navbar .nav-link {
+      color: #FFFFFF;
+    }
+
+    .navbar-scroll {
+      background-color: #FFFFFF !important ; /* Replace with your desired primary color */
+    }
+
+    .navbar-scroll .container a,
+    .navbar-scroll .container button {
+      color: #0d6efd;
+    }
+
+    .navbar-scroll .container button {
+      border: #0d6dfd82 solid 0.2px;
+      background-color: #FFFFFF;
+    }
+
+    .navbar-scroll .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(13, 110, 253, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar-scroll.navbar-toggler {
+      border-color: #0d6efd;
+    } 
+
+    .card-body div a img {
+      height: 30px;
+      opacity: 40%;
+    }
+
+    .card-body div a img:hover {
+      opacity: 80%;
+      height: 34px;
+      transition: 0.4s ease-in-out;
+    }
+
+    a img {
+      height: 30px;
+    }
+
+    #contactme div div a {
+      width: 220px;
+      color: var(--bs-dark) !important;
+      text-decoration: none;
+    }
+
+    #contactme div div a:hover {
+      background-color: var(--bs-dark) !important;
+    }
+
+    #contactme div div a:hover {
+      color: var(--bs-white) !important;
+    }
+
+    @media screen and (max-width: 700px) {
+      #contact-row {
+        flex-direction: column;
+      }
+      #skills-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" style="font-family: Caveat; font-weight: 700; font-size: 36px;" href="#hero">Blog punya Adam</a>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-center" id="hero">
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="fw-bold" style="font-family: 'Roboto Bold', sans-serif;">Hi, I'm <span style="font-family: Caveat; font-weight: 600;"> Adam Rahmat Ilahi</span></h1>
+        <p>Fullstack Developer<br>Mentor CLI Technology & Open-Source ITATS</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- Content section -->
+  <section class="d-flex align-items-center justify-content-center text-center pt-5 pb-5" id="content" style="background-color: var(--bs-primary); color: #FFFFFF; min-height: 100%;">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center mt-3 mb-4">
+          <h1 class="fw-reguler" style="font-family: 'Roboto SemiBold', sans-serif;">This is my blog</h1>
+          <p>I share something like a free course and trending technology In here.</p>
+        </div>
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="https://i.ytimg.com/vi/hMDJyb7VkYw/maxresdefault.jpg" class="card-img-top" alt="html basic">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">Basic HTML</h5>
+                <p class="card-text text-start">Explore the fundamentals of HTML with this comprehensive course led by renowned instructor Eko Kurniawan Khannedy. The card features an eye-catching image that sets the tone for an engaging learning experience.<br>Dive into the world of HTML and learn how to structure web pages, format text, insert images, and create links.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://youtu.be/hMDJyb7VkYw" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="https://i.ytimg.com/vi/SDROba_M42g/maxresdefault.jpg" class="card-img-top" alt="js fundamental">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">Javascript Fundamental</h5>
+                <p class="card-text text-start">Take your web development skills to the next level with our comprehensive JavaScript course. Led by industry expert Eko Kurniawan Khannedy, this course will guide you through the essential concepts and techniques of JavaScript programming.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://youtube.com/playlist?list=PL-CtdCApEFH8SS0Gsj9_a0cC0jypFEoSg" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="https://i.ytimg.com/vi/b39Xqf5iyjo/maxresdefault.jpg" class="card-img-top" alt="node js fundamental">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">Node JS Fundamental</h5>
+                <p class="card-text text-start">Elevate your web development expertise with our comprehensive Node.js course. Led by experienced instructor Eko Kurniawan Khannedy, this course will equip you with the skills to build powerful and scalable web applications using Node.js.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://youtube.com/playlist?list=PL-CtdCApEFH9540Fr7MvF9t-vG6pR9vjw" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="img/linux.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">Linux Course</h5>
+                <p class="card-text text-start">Learn the fundamentals of Linux operating system, including command-line usage, file system management, and shell scripting. Gain practical skills for managing Linux servers and working with various Linux distributions.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://www.mygreatlearning.com/academy/courses/6267599/52823#?utm_source=share_with_friends&gl_source=share_with_friends" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="img/cpp.png" class="card-img-top" alt="Project 2">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">C++ Course</h5>
+                <p class="card-text text-start">Master the C++ programming language and learn object-oriented programming concepts. Explore topics such as data types, control structures, functions, classes, and more. Build projects and gain practical experience in C++ programming.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://www.coursera.org/specializations/coding-for-everyone" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2 mt-2">
+            <div class="card h-100">
+              <img src="img/uiux.png" class="card-img-top" alt="Project 3">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-3 fw-semibold">UI / UX  Course</h5>
+                <p class="card-text text-start">Learn the principles of User Interface (UI) and User Experience (UX) design. Develop skills in creating visually appealing and user-friendly interfaces for websites and applications. Gain hands-on experience with design tools and create interactive prototypes.</p>
+                <div class="d-flex justify-content-between mt-auto">
+                  <a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/ui-ux" class="btn btn-primary">Go to Course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  <section class="container-fluid pt-5 pb-5" style="min-height: 74vh;" id="contactme">
+    <div class="container pt-5 pb-5 mb-5">
+      <h1 class="fw-bold text-center pb-3">Contact Me</h1>
+      <p class="text-center pb-5">feel free if you want contact me</p>
+      <div class="row justify-content-evenly" id="contact-row">
+        <a href="wa.me/+6285648645402" class="col-4 d-flex justify-content-evenly border mx-auto my-3 position-relative px-1 py-2 rounded-4 bg" style="background-color: #ffffff; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="github-icon">
+          whatsapp
+        </a>
+        <a href="mailto:adamrahmatilahi@gmail.com" class="col-4 d-flex justify-content-evenly border mx-auto my-3 position-relative px-1 py-2 rounded-4" style="background-color: #ffffff; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="gmail-icon">
+          gmail
+        </a>
+        <a href="https://www.linkedin.com/in/adam-rahmat-ilahi/" class="col-4 d-flex justify-content-evenly border mx-auto my-3 position-relative px-1 py-2 rounded-4" style="background-color: #ffffff; text-decoration: none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin-icon">
+          linkedin
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Content section -->
+
+  <!-- Footer section -->
+  <footer class="d-flex align-items-center justify-content-center text-center bg-dark text-white pt-4 pb-3">
+    <div class="container text-center">
+      <p>&copy; 2023 @adamrahmatilahi. All rights reserved.</p>
+      <p>Website created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d44646" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg> using Bootstrap.</p>
+    </div>
+  </footer>
+  <!-- End Footer section -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        const contentSection = document.querySelector("#content");
+        const contactMeSection = document.querySelector("#contactme");
+        const rectContent = contentSection.getBoundingClientRect();
+        const rectContactMe = contactMeSection.getBoundingClientRect();
+
+        if (rectContent.top <= 80 && rectContent.bottom >= 80) {
+          navbar.classList.add("navbar-scroll");
+        } else {
+          navbar.classList.remove("navbar-scroll");
+        }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.navbar-collapse').on('show.bs.collapse', function() {
+        $('.navbar-toggler').addClass('collapsed');
+      });
+
+      $('.navbar-collapse').on('hide.bs.collapse', function() {
+        $('.navbar-toggler').removeClass('collapsed');
+      });
+    });
+  </script>
+  <!-- End Bootstrap JS -->
+
+</body>
+</html>
